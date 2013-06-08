@@ -1,0 +1,39 @@
+import java.util.*;
+
+class apples{
+  public static void main (String[] args){
+		
+		createfile g = new createfile();
+		g.openFile();
+		g.addRecords();
+		g.closeFile();
+	}
+}
+
+import java.io.*;
+import java.lang.*;
+import java.util.*;
+
+public class createfile {
+  
+	private Formatter x;
+	
+	public void openFile(){
+		try{
+			x = new Formatter("chinese.txt");
+		}
+		catch(Exception e){
+			System.out.println("you have an erroe");
+		}
+	}
+	
+	public void addRecords(){
+		x.format("%s%s%s "," 20", " matt"," quinn");
+	}
+	
+	public void closeFile(){
+		x.close();
+	}
+
+}
+

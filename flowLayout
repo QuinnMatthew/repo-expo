@@ -1,6 +1,6 @@
 import javax.swing.JFrame;
 
-class apples{
+class Main{
   public static void main (String[] args){
 		
 		Layout x = new Layout();

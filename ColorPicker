@@ -1,9 +1,9 @@
 import javax.swing.JFrame;
 
-class apples{
+class Main{
   public static void main (String[] args){
 		
-		Peach p = new Peach();
+		colorPicker p = new ColorPicker();
 		p.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 	}
@@ -14,13 +14,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Peach extends JFrame{
+public class colorPicker extends JFrame{
 
   private JButton b;
 	private Color color = (Color.WHITE);
 	private JPanel panel;
 	
-	public Peach(){
+	public colorPicker(){
 		super("The title");
 		panel = new JPanel();
 		panel.setBackground(color);

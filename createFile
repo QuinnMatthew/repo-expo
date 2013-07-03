@@ -1,6 +1,6 @@
 import java.util.*;
 
-class apples{
+class Main{
   public static void main (String[] args){
 		
 		createfile g = new createfile();
